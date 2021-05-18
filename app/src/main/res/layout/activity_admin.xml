@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".AdminActivity"
+    tools:targetApi="o">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="Edit Lokasi"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nama_adm"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/edt_bahan"
+            android:hint="@string/nama"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            tools:targetApi="o" />
+
+        <EditText
+            android:layout_marginTop="16dp"
+            android:id="@+id/lokasi_adm"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/edt_bahan"
+            android:hint="lokasi"
+            android:paddingHorizontal="16dp"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/img_adm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ButtonChooseImage"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Image Name Here"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonsolidprimary"
+            android:text="Tambah"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_pilih"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonsolidprimary"
+            android:text="Pilih Image"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
